@@ -1,0 +1,93 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("https://www.shutterstock.com/image-photo/human-resource-information-system-talent-260nw-2170185259.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Styling for Links */
+a {
+  text-decoration: none;
+  color: #1976d2;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4f93ff;
+}
+
+/* Header Styling */
+header {
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+}
+
+/* App Content Styling */
+.main-container {
+  max-width: 1200px; /* Maintains a maximum width */
+  margin: 40px auto; /* Centers the container */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  border-radius: 10px; /* Smooth edges */
+  animation: slideIn 1.5s ease-out; /* Slide-in effect on render */
+  display: flex; /* Ensures flexible content layout */
+  flex-direction: column; /* Stack children vertically */
+  height: auto; /* Ensures container adjusts to content height */
+  min-height: 100px; /* Optional: Sets a minimum height for visual balance */
+  overflow: visible; /* Allows content overflow dynamically */
+  flex-grow: 1; /* Allows the container to grow with content */
+}
+
+
+
+/* Footer Styling */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  header {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
